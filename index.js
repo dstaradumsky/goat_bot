@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
+const client = new Discord.Client({intents: [intents.FLAGS.GUILDS]});
 const sairoID = "167931077694980096";
 const myID = "196072810815291392";
 const wabbitID = "123751981016809475";
