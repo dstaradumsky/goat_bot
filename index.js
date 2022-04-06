@@ -18,7 +18,10 @@ client.on('message', message => {
 
 	switch (messageArgs[0]) {
 		case ("g!help"): {
-			message.channel.send("Commands: \n g!gay : See if you are gay\n g!iq : Carefully analyzes and calculates your iq\n g!teez : See how your teez rates on the teezy scale")
+			message.channel.send(`Commands: \n 
+			g!gay : See if you are gay\n 
+			g!iq : Carefully analyzes and calculates your iq\n 
+			g!teez : See how your teez rates on the teezy scale`)
 		}
 		break
 		case ("g!gay"):
@@ -38,6 +41,7 @@ client.on('message', message => {
 			else {
 				message.channel.send("Your IQ is 500")
 			};
+		break
 		case ("g!teez"):
 		{
 			var rand = Math.random();
