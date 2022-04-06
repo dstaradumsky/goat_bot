@@ -1,5 +1,5 @@
 const GAMES = ["Geometry Dash","CSGO","Age","DOTA 2","Runescape",]
-export function horoscope(){
+function horoscope(){
     promptStart = [
     'Consider ', 
     'The path is clear: ', 
@@ -23,3 +23,4 @@ export function horoscope(){
    return promptStart[Math.floor(Math.random()*promptStart.length)] + nouns[Math.floor(Math.random()*nouns.length)] + promptEnd[Math.floor(Math.random()*promptEnd.length)]
 
 }
+export {horoscope}
