@@ -1,5 +1,5 @@
+import './features.js'
 const Discord = require('discord.js');
-const Features = require('./features.js')
 const client = new Discord.Client({ intents: ['GUILDS', 'GUILD_MESSAGES'] });
 const sairoID = "167931077694980096";
 const myID = "196072810815291392";
