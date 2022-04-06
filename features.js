@@ -1,9 +1,9 @@
 const GAMES = ["Geometry Dash","CSGO","Age","DOTA 2","Runescape",]
 module.exports.horoscope = function (){
     promptStart = [
-    'Consider ', 
+    'Consider: ', 
     'The path is clear: ', 
-    'As John would say ',
+    'As John would say: ',
     'You will find ']
     nouns = [
     'finger',
