@@ -53,6 +53,7 @@ client.on('message', message => {
 			{
 				message.channel.send("<@" + message.author.id + "> "+Features.horoscope());
 			}
+		break
 			default:
 	}
 	switch (message.author.id) {
