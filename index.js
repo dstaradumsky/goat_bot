@@ -17,6 +17,10 @@ client.on('message', message => {
 	messageArgs = message.content.split();
 
 	switch (messageArgs[0]) {
+		case ("g!help"): {
+			message.channel.send("Commands: \n g!gay : See if you are gay\n g!iq : Carefully analyzes and calculates your iq\n g!teez : See how your teez rates on the teezy scale")
+		}
+		break
 		case ("g!gay"):
 			if (message.author.id == myID) {
 				message.channel.send(message.author.username + " is not gay");
@@ -38,7 +42,8 @@ client.on('message', message => {
 		{
 			var rand = Math.random();
 			message.channel.send("<@"+message.author.id+"> I rate your teez "+ Math.floor(rand * 10)+"/10");
-		};
+		}
+		break
 			default:
 	}
 	switch (message.author.id) {
