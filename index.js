@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const Features = require('features.js')
 const client = new Discord.Client({ intents: ['GUILDS', 'GUILD_MESSAGES'] });
 const sairoID = "167931077694980096";
 const myID = "196072810815291392";
@@ -48,25 +49,29 @@ client.on('message', message => {
 			message.channel.send("<@"+message.author.id+"> I rate your teez "+ Math.floor(rand * 10)+"/10");
 		}
 		break
+		case ("g!horoscope"):
+			{
+				message.channel.send("<@" + message.author.id + "> "+Features.horoscope());
+			}
 			default:
 	}
 	switch (message.author.id) {
 		case (charlesID):
 			var rand = Math.random();
-			if (rand <= .1) {
+			if (rand <= .01) {
 				message.channel.send("<@"+message.author.id+"> WE PLAY AGE?");
 			}
 
-			else if (rand <= .2) {
+			else if (rand <= .02) {
 				message.channel.send("<@"+message.author.id+"> WE PLAY GEOMETRY TRASH?");
 			}
-			else if (rand <= .3) {
+			else if (rand <= .03) {
 				message.channel.send("<@"+message.author.id+"> CSGO?");
 			}
 			break
 		case (kareemID):
 			var rand = Math.random();
-			if (rand <= .1) {
+			if (rand <= .025) {
 				message.channel.send("<@"+message.author.id+"> we do a codes?");
 			}
 		default:
