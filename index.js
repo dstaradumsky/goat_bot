@@ -22,7 +22,8 @@ client.on('message', message => {
 			message.channel.send(`Commands: \n 
 			g!gay : See if you are gay\n 
 			g!iq : Carefully analyzes and calculates your iq\n 
-			g!teez : See how your teez rates on the teezy scale`)
+			g!teez : See how your teez rates on the teezy scale\n
+			g!horoscope : See your fortune\n`)
 		}
 		break
 		case ("g!gay"):
@@ -45,8 +46,14 @@ client.on('message', message => {
 		break
 		case ("g!teez"):
 		{
-			var rand = Math.random();
-			message.channel.send("<@"+message.author.id+"> I rate your teez "+ Math.floor(rand * 10)+"/10");
+			var rand = Math.floor(Math.random()*11);
+			if(rand<9){
+			message.channel.send("<@"+message.author.id+"> I rate your teez "+ rand +"/10");
+			}
+			else {
+				message.channel.send("<@"+message.author.id+"> I rate your teez "+ rand +"/10");
+				message.channel.send("https://tenor.com/view/wowawewa-borat-wowwawewaa-gif-15656274");
+			}
 		}
 		break
 		case ("g!horoscope"):
